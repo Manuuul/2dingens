@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1413506182 source:/home/manull/Dev/OpenGL/2dsache/main.c
+	<stdio.h>
+	<stdlib.h>
+	<GL/glew.h>
+	<GL/gl.h>
+	<SDL2/SDL.h>
+	"shader.h"
+	"window.h"
+	"util.h"
+	<SDL2/SDL_image.h>
+
+1413483456 source:/home/manull/Dev/OpenGL/2dsache/shader.c
+	"shader.h"
+
+1413483456 /home/manull/Dev/OpenGL/2dsache/shader.h
+	<stdio.h>
+	<stdlib.h>
+	<GL/glew.h>
+	<GL/gl.h>
+	<SDL2/SDL_image.h>
+
+1413334321 /home/manull/Dev/OpenGL/2dsache/window.h
+	<SDL2/SDL.h>
+	<GL/glew.h>
+
+1413404255 source:/home/manull/Dev/OpenGL/2dsache/window.c
+	"window.h"
+
+1413389860 /home/manull/Dev/OpenGL/2dsache/util.h
+	<stdio.h>
+
+1413389881 source:/home/manull/Dev/OpenGL/2dsache/util.c
+	"util.h"
+

@@ -1,0 +1,13 @@
+#version 150 core
+in ivec2 position;
+in ivec2 texcoord;
+out vec2 texc;
+uniform ivec2 resolution;
+
+void main(){
+    vec2 fpos = vec2(position);
+    vec2 fres = vec2(resolution);
+    vec2 pos = (vec2(2.0, -2.0) * vec2(fpos/fres)) - vec2(1.0, -1.0);
+    gl_Position = vec4(pos, 0.0, 1.0);
+    texc = vec2(texcoord);
+}
