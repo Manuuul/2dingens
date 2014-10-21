@@ -6,13 +6,14 @@
 #include <GL/glew.h>
 #include <GL/gl.h>
 #include <SDL2/SDL_image.h>
+#include "util.h"
 
 GLuint build_shader(GLenum, char *);
 //Kompiliert einen GLSL Shader
 //Gibt die Shader ID zurück
 //TODO: Quelltext wird nicht wieder Freigegeben
 
-GLuint link_program(GLuint, GLuint, char *);
+GLuint link_program(GLuint, GLuint);
 //Verlinkt Vertex Shader und Fragment Shader zu GLSL Programm
 //Gibt Programm ID zurück
 

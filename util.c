@@ -1,4 +1,5 @@
 #include "util.h"
+
 char* read_file(char *path){
     FILE *fp;
     char *content;
@@ -21,4 +22,13 @@ char* read_file(char *path){
 
     fclose(fp);
     return content;
+}
+
+void check_error(char *code_pos){
+    GLenum err = glGetError();
+    if(err != GL_NO_ERROR){
+        printf("OpenGL Fehler in %s:\n", code_pos);
+        printf("\t%d:", (int)err);
+        printf("\t%s", gluErrorString(err));
+    }
 }

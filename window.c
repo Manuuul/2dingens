@@ -3,9 +3,12 @@
 
 SDL_Window *create_window(char *title, int width, int height){
     SDL_Window *window = SDL_CreateWindow(title, SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, width, height, SDL_WINDOW_OPENGL);
+
     SDL_GLContext cont = SDL_GL_CreateContext(window);
     SDL_GL_MakeCurrent(window, cont);
     SDL_GL_SetSwapInterval(0);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 2);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 1);
     glewInit();
 
     //Element Buffer

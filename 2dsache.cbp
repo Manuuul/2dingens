@@ -31,7 +31,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="fragment.txt" />
+		<Unit filename="fragment.glsl" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -43,7 +43,7 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="util.h" />
-		<Unit filename="vertex.txt" />
+		<Unit filename="vertex.glsl" />
 		<Unit filename="window.c">
 			<Option compilerVar="CC" />
 		</Unit>

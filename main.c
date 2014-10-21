@@ -7,6 +7,7 @@
 #include "window.h"
 #include "util.h"
 #include <SDL2/SDL_image.h>
+//
 //TODO: //Koordinaten auf uint umstellen
 //      Attribute in Funktion packen
 //      Transparenz
@@ -21,11 +22,11 @@ int main(){
 
 
     //Shader
-    char *vshsource = read_file("vertex.txt");
+    char *vshsource = read_file("vertex.glsl");
     GLuint vshader = build_shader(GL_VERTEX_SHADER, vshsource);
-    char *fshsource = read_file("fragment.txt");
+    char *fshsource = read_file("fragment.glsl");
     GLuint fshader = build_shader(GL_FRAGMENT_SHADER, fshsource);
-    GLuint sprog = link_program(vshader, fshader, "outColor");
+    GLuint sprog = link_program(vshader, fshader);
 
     GLint posAttrib = glGetAttribLocation(sprog, "position");
     glEnableVertexAttribArray(posAttrib);
